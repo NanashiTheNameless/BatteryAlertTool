@@ -27,7 +27,7 @@ cat << 'EOF' > "$SCRIPT_PATH"
 #!/bin/bash
 
 timeInbetweenAlerts=10
-batteryPercentAlert=15
+batteryPercentAlert=20
 
 # This is from https://github.com/NanashiTheNameless/BatteryAlertTool
 # It is licensed under https://github.com/NanashiTheNameless/BatteryAlertTool/blob/main/license.md
@@ -121,5 +121,5 @@ fi
 if [[ "$(uname)" == "Darwin" ]]; then
     echo "Battery alert script and LaunchAgent have been successfully set up!"
 else
-    echo "Battery alert script successfully added to $SCRIPT_PATH!"
+    echo "Battery alert script successfully installed to $SCRIPT_PATH!"
 fi
