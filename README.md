@@ -8,4 +8,16 @@ This can be installed with
 curl -H 'Cache-Control: no-cache, no-store' -H 'Pragma: no-cache' -s -L https://github.com/NanashiTheNameless/BatteryAlertTool/raw/refs/heads/main/setup.sh | bash
 ```
 
-Source can be found here <https://github.com/NanashiTheNameless/BatteryAlertTool/blob/main/setup.sh>
+## Editing Parameters
+
+### Mac
+
+To change how often the script alerts you, at what percentage the script triggers, or the sound the script uses, you can edit the variables at <br>
+`/Users/$USER/Library/Scripts/batt.sh` <br>
+The important parameters are all at the top!
+
+### Linux
+
+To change how often the script alerts you, at what percentage the script triggers, or the sound the script uses, you can edit the variables at <br>
+`/home/$USER/bin/batteryReminder` <br>
+The important parameters are all at the top!
