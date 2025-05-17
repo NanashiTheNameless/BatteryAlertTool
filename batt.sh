@@ -7,7 +7,7 @@ alertSoundMac=/System/Library/Sounds/Funk.aiff
 alertSoundLinux=/usr/share/sounds/common/battery-low.ogg
 
 # If you need to override system type (Ex. system doesnt have "uname" available)
-# You can manually override this to "Darwin" for mac or "Linux" for Lipnux
+# You can manually override this to "Darwin" for mac or "Linux" for Linux
 systemType=$(uname)
 
 # This is from https://github.com/NanashiTheNameless/BatteryAlertTool
