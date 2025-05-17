@@ -17,7 +17,6 @@ while true; do
     if [[ "$systemType" == "Darwin" ]]; then
         if pmset -g batt | head -n 1 | grep -i -q "Battery" && [ $(pmset -g batt | grep -i -o '[0-9]\{1,3\}%' | tr -d '%') -le $batteryPercentAlert ]; then
             afplay $alertSoundMac
-            sleep $timeInbetweenAlerts
         fi
     else
         batteryInfo=$(upower -i $(upower -e | grep -i BAT))
@@ -26,9 +25,8 @@ while true; do
 
         if [[ "$chargingState" == "discharging" && $batteryPercent -le $batteryPercentAlert ]]; then
             paplay $alertSoundLinux
-            sleep $timeInbetweenAlerts
         fi
     fi
 
-    sleep 1
+    sleep $timeInbetweenAlerts
 done
