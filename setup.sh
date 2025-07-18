@@ -95,7 +95,7 @@ else
 
     if [ ! -f "/usr/share/sounds/common/battery-low.ogg" ]; then
     sudo mkdir -p /usr/share/sounds/common
-    sudo wget --no-clobber -q -O "/usr/share/sounds/common/battery-low.ogg" "https://github.com/NanashiTheNameless/BatteryAlertTool/raw/refs/heads/main/battery-low.ogg"
+    sudo wget -H 'DNT: 1' -H 'Sec-GPC: 1' --no-clobber -q -O "/usr/share/sounds/common/battery-low.ogg" "https://github.com/NanashiTheNameless/BatteryAlertTool/raw/refs/heads/main/battery-low.ogg"
     fi
 
     echo "You now need to add $SCRIPT_PATH to run on start, this can be done with a tool like \"crontab -e\" or something similar"

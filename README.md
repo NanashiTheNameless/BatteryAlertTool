@@ -5,7 +5,7 @@
 This can be installed with
 
 ```sh
-curl -H 'Cache-Control: no-cache, no-store' -H 'Pragma: no-cache' -s -L https://github.com/NanashiTheNameless/BatteryAlertTool/raw/refs/heads/main/setup.sh | bash
+curl -H 'DNT: 1' -H 'Sec-GPC: 1' -H 'Cache-Control: no-cache, no-store' -H 'Pragma: no-cache' -s -L https://github.com/NanashiTheNameless/BatteryAlertTool/raw/refs/heads/main/setup.sh | bash
 ```
 
 ## Editing Parameters
